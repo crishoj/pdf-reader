@@ -1751,6 +1751,7 @@ eightpersian;06F8
 eightroman;2177
 eightsuperior;2078
 eightthai;0E58
+einverted;0259
 einvertedbreve;0207
 eiotifiedcyrillic;0465
 ekatakana;30A8
@@ -2148,6 +2149,7 @@ hieuhaparenkorean;321B
 hieuhcirclekorean;326D
 hieuhkorean;314E
 hieuhparenkorean;320D
+highquote;02C8
 hihiragana;3072
 hikatakana;30D2
 hikatakanahalfwidth;FF8B
@@ -4052,6 +4054,7 @@ verticallinemod;02C8
 vewarmenian;057E
 vhook;028B
 vikatakana;30F8
+vinverted;028C
 viramabengali;09CD
 viramadeva;094D
 viramagujarati;0ACD
@@ -4319,4 +4322,10 @@ zretroflexhook;0290
 zstroke;01B6
 zuhiragana;305A
 zukatakana;30BA
+# Vendor specific glyphs
+yogh;0292
+box4;10FC03
+cinverted;0254
+cinverteddots;FE55
+.notdef;2192
 #--end
