@@ -120,7 +120,7 @@ class PDF::Reader
       while count != 0
         @buffer.ready_token(false, false)
 
-        # find the first occurance of ( ) [ \ or ]
+        # find the first occurance of ( ) or \
         #
         # I originally just used the regexp form of index(), but it seems to be
         # buggy on some OSX systems (returns nil when there is a match). The
@@ -128,7 +128,7 @@ class PDF::Reader
         # greater.
         #
         if RUBY_VERSION >= "1.8.7"
-          i = @buffer.raw.unpack("C*").index { |n| [40, 41, 91, 92, 93].include?(n) }
+          i = @buffer.raw.unpack("C*").index { |n| [40, 41, 92].include?(n) }
         else
           i = @buffer.raw.index(/[\\\(\)]/)
         end
